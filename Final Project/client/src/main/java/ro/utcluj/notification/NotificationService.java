@@ -22,7 +22,6 @@ public class NotificationService {
 
 
     public NotificationService(ClientController clientController, WorkerController workerController) {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clientView.fxml"));
         this.clientController = clientController;
         this.workerController = workerController;
     }
@@ -31,7 +30,6 @@ public class NotificationService {
     //@PostConstruct
     public void connectToNotificationServer() throws IOException {
         Socket socket = new Socket("localhost", 8081);
-
 
         Thread listenerThread = new Thread(new ServerSocketListener(socket, clientController,workerController));
         listenerThread.start();
@@ -43,6 +41,5 @@ public class NotificationService {
         System.out.println("Am trimis id-ul : " + LoginController.getUserId());
 
     }
-
 
 }

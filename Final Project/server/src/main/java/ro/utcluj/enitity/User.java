@@ -1,6 +1,7 @@
 package ro.utcluj.enitity;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -18,6 +19,7 @@ public class User {
     private int bonuses;
     private int numberOfWashedCars;
     private int numberOfBreaks;
+    private int rank;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "car", referencedColumnName = "id")
