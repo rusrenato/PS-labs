@@ -2,38 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6db6a67b-c9c3-4179-a3f9-85f592d0665d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_controlsfx_controlsfx_8_40_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_6_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/ReviewServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/ReviewDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/ReviewMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/repository/ReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/ReviewService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/UserServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/UserServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/ro/utcluj/api/UserServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/ro/utcluj/api/UserServiceInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/ro/utcluj/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/ro/utcluj/dto/UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/StudentInfoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/ro/utcluj/api/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/ro/utcluj/dto/StudentInfoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/ro/utcluj/config/ClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/ro/utcluj/config/ClientConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/WorkerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/WorkerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/resources/clientView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/clientView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/workerView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/workerView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/target/classes/clientView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/clientView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/ro/utcluj/config/ClientConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/ro/utcluj/config/ClientConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/target/classes/ro/utcluj/controller/ClientController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/ro/utcluj/controller/ClientController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/target/classes/ro/utcluj/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/ro/utcluj/controller/ClientController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/target/classes/ro/utcluj/controller/WorkerController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/ro/utcluj/controller/WorkerController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/target/classes/ro/utcluj/controller/WorkerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/ro/utcluj/controller/WorkerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/ro/utcluj/notification/NotificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/ro/utcluj/notification/NotificationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/workerView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/workerView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/config/ServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/config/ServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Student.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/StudentInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/repository/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/StudentServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/test/java/ro/utcluj/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/ro/utcluj/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/ro/utcluj/config/ServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/ro/utcluj/config/ServerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/ro/utcluj/enitity/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/ro/utcluj/enitity/Student.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/ro/utcluj/enitity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/ro/utcluj/enitity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/ro/utcluj/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/ro/utcluj/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/ro/utcluj/mapper/StudentInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/ro/utcluj/repository/StudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/ro/utcluj/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/ro/utcluj/service/CarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/ro/utcluj/service/StudentServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/ro/utcluj/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/ro/utcluj/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/test-classes/ro/utcluj/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/test-classes/ro/utcluj/AppTest.class" afterDir="false" />
     </list>
@@ -59,11 +67,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/main/resources/clientView.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/ReviewService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="37" column="77" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/ReviewServiceInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,65 +93,30 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/ClientController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="315" column="163" selection-start-line="315" selection-start-column="163" selection-end-line="315" selection-end-column="163" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#15688#15689#0" expanded="true" />
-                <element signature="e#15736#15737#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/WashServiceInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/WashService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/test/java/ro/utcluj/AppTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
-              <folding>
-                <element signature="e#3336#3337#0" expanded="true" />
-                <element signature="e#3440#3441#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/WorkerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="141" column="11" selection-start-line="141" selection-end-line="142" />
+            <state relative-caret-position="-1878">
+              <caret line="253" column="27" selection-start-line="253" selection-start-column="23" selection-end-line="253" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Review.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/resources/clientView.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2108">
+              <caret line="124" column="55" selection-start-line="124" selection-start-column="55" selection-end-line="124" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -139,8 +126,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -160,8 +147,9 @@
       <find>syste</find>
       <find>sys</find>
       <find>ratin</find>
-      <find>rating</find>
       <find>workerH</find>
+      <find>rating</find>
+      <find>setvi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,19 +163,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/StudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Role.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/Role.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/repository/WashRepository.java" />
         <option value="$PROJECT_DIR$/client/src/main/resources/adminView.fxml" />
         <option value="$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/CarServiceInterfacec.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/repository/CarRepository.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/CarServiceInterface.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/ro/utcluj/config/ClientConfig.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/config/ServerConfig.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/CarDTO.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/CarService.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Car.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/CarMapper.java" />
         <option value="$PROJECT_DIR$/client/src/main/resources/loginView.fxml" />
@@ -205,7 +185,6 @@
         <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/notification/NotificationService.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/ro/utcluj/notification/ServerSocketListener.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/client/src/main/resources/workerView.fxml" />
         <option value="$PROJECT_DIR$/client/src/main/java/ro/utcluj/notification/NotificationService.java" />
         <option value="$PROJECT_DIR$/server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/client/pom.xml" />
@@ -214,14 +193,26 @@
         <option value="$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/WashDTO.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/UserServiceInterface.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/User.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/WorkerController.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/UserDTO.java" />
         <option value="$PROJECT_DIR$/server/pom.xml" />
-        <option value="$PROJECT_DIR$/client/src/main/resources/clientView.fxml" />
         <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/WashService.java" />
-        <option value="$PROJECT_DIR$/server/src/test/java/ro/utcluj/AppTest.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/UserService.java" />
+        <option value="$PROJECT_DIR$/client/src/main/resources/workerView.fxml" />
+        <option value="$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/WorkerController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/CarService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/ReviewDTO.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/StudentInfoMapper.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/config/ServerConfig.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/ro/utcluj/config/ClientConfig.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/ReviewMapper.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/repository/ReviewRepository.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/User.java" />
+        <option value="$PROJECT_DIR$/server/src/test/java/ro/utcluj/AppTest.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Review.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/ReviewService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/ReviewServiceInterface.java" />
+        <option value="$PROJECT_DIR$/client/src/main/resources/clientView.fxml" />
         <option value="$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/ClientController.java" />
       </list>
     </option>
@@ -240,9 +231,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -250,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,6 +347,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utcluj" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sql-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Final Project" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utcluj" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -408,6 +410,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utcluj" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sql-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Final Project" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utcluj" type="462c0819:PsiDirectoryNode" />
               <item name="enitity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -419,6 +431,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utcluj" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sql-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Final Project" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utcluj" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sql-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -467,7 +489,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -575,17 +596,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.App" />
-      <item itemvalue="Spring Boot.Client" />
       <item itemvalue="JUnit.AppTest.rank" />
       <item itemvalue="JUnit.AppTest.Strings" />
+      <item itemvalue="Spring Boot.App" />
+      <item itemvalue="Spring Boot.Client" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Client" />
         <item itemvalue="Spring Boot.App" />
-        <item itemvalue="JUnit.AppTest.Strings" />
         <item itemvalue="JUnit.AppTest.rank" />
+        <item itemvalue="JUnit.AppTest.Strings" />
       </list>
     </recent_temporary>
   </component>
@@ -619,7 +640,9 @@
       <workItem from="1558454893029" duration="2544000" />
       <workItem from="1558448225474" duration="478000" />
       <workItem from="1558493536985" duration="2597000" />
-      <workItem from="1558722408172" duration="18256000" />
+      <workItem from="1558722408172" duration="29031000" />
+      <workItem from="1558817797602" duration="244000" />
+      <workItem from="1558818539780" duration="521000" />
     </task>
     <task id="LOCAL-00001" summary="Added new field">
       <created>1558724689064</created>
@@ -628,19 +651,17 @@
       <option name="project" value="LOCAL" />
       <updated>1558724689064</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added rating system and client discount">
+      <created>1558785803282</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558785803282</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_rank - 2019.05.25 at 01h 25m 07s.xml">
-      <configuration name="AppTest.rank" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_rank - 2019.05.25 at 01h 25m 41s.xml">
-      <configuration name="AppTest.rank" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_rank - 2019.05.25 at 01h 26m 32s.xml">
-      <configuration name="AppTest.rank" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest_rank - 2019.05.25 at 01h 26m 45s.xml">
       <configuration name="AppTest.rank" configurationId="JUnit" />
     </history-entry>
@@ -662,15 +683,24 @@
     <history-entry file="AppTest_Strings - 2019.05.25 at 14h 36m 06s.xml">
       <configuration name="AppTest.Strings" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest_rank - 2019.05.25 at 20h 19m 33s.xml">
+      <configuration name="AppTest.rank" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_rank - 2019.05.25 at 20h 31m 00s.xml">
+      <configuration name="AppTest.rank" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_rank - 2019.05.25 at 20h 31m 38s.xml">
+      <configuration name="AppTest.rank" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99844000" />
+    <option name="totallyTimeSpent" value="111384000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2637584" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27181208" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -678,11 +708,11 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.23937677" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.26977247" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.42351276" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.26912183" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -708,191 +738,23 @@
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Maven" order="12" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32936078" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Sequence" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="PlantUML" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added new field" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new field" />
+    <MESSAGE value="Added rating system and client discount" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added rating system and client discount" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/CarMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/registrationView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar!/ch/qos/logback/core/net/server/ServerSocketListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/StudentInfoDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/CarDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/AlertBox.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/net/Socket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-466">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/adminView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="58" column="81" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/loginView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.6.RELEASE/spring-beans-5.1.6.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3553">
-          <caret line="209" column="21" selection-start-line="209" selection-start-column="21" selection-end-line="209" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/notification/MessageQueues.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.6.RELEASE/spring-beans-5.1.6.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="872" column="26" selection-start-line="872" selection-start-column="26" selection-end-line="872" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/PopUpController.java" />
     <entry file="file://$PROJECT_DIR$/client/src/main/resources/PopUp.fxml" />
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/repository/CarRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
           <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/workerView.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1045,24 +907,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Wash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1090,50 +938,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="17" />
-          <folding>
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-839">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5">
           <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/clientView.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/WashService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
@@ -1144,13 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/test/java/ro/utcluj/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/WashServiceInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1158,35 +959,255 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/WorkerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/StudentService.java" />
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/StudentServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/resources/workerView.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/ReviewDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/CarServiceInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/dto/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/repository/CarRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/StudentInfoMapper.java" />
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/CarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/config/ServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/CarMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="513">
           <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
+            <element signature="e#3283#3284#0" expanded="true" />
             <element signature="e#3336#3337#0" expanded="true" />
+            <element signature="e#3387#3388#0" expanded="true" />
             <element signature="e#3440#3441#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/WorkerController.java">
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/config/ClientConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="141" column="11" selection-start-line="141" selection-end-line="142" />
+        <state relative-caret-position="-177">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/WashService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Address.java" />
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/repository/ReviewRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/ClientController.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="315" column="163" selection-start-line="315" selection-start-column="163" selection-end-line="315" selection-end-column="163" />
+        <state relative-caret-position="301">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/mapper/ReviewMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#15688#15689#0" expanded="true" />
-            <element signature="e#15736#15737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Wash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/test/java/ro/utcluj/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+          <folding>
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/service/ReviewService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="37" column="77" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/ro/utcluj/api/ReviewServiceInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/ro/utcluj/enitity/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/resources/clientView.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2108">
+          <caret line="124" column="55" selection-start-line="124" selection-start-column="55" selection-end-line="124" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/ro/utcluj/controller/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1878">
+          <caret line="253" column="27" selection-start-line="253" selection-start-column="23" selection-end-line="253" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

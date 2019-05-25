@@ -7,6 +7,7 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -115,6 +116,28 @@
                                 </Text>
                                 <Button layoutX="234.0" layoutY="278.0" mnemonicParsing="false" onAction="#addMoney" prefHeight="25.0" prefWidth="92.0" text="Add money" />
                         <Text fx:id="moneyError" layoutX="111.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="227.13671875" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Workers">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="tableViewReview" layoutX="32.0" layoutY="26.0" prefHeight="200.0"
+                                           prefWidth="580.0">
+                                    <columns>
+                                        <TableColumn fx:id="idColumnReview" prefWidth="75.0" text="Id"/>
+                                        <TableColumn fx:id="messageColumn" prefWidth="382.0" text="Review"/>
+                                        <TableColumn fx:id="gradeColumn" minWidth="0.0" prefWidth="121.0" text="Grade"/>
+                                    </columns>
+                                </TableView>
+                                <TextArea fx:id="textArea" layoutX="201.0" layoutY="241.0" prefHeight="92.0"
+                                          prefWidth="412.0"/>
+                                <ComboBox fx:id="workersComboBoxForReview" layoutX="14.0" layoutY="241.0"
+                                          prefHeight="31.0" prefWidth="164.0" promptText="Select a worker"/>
+                                <Button onAction="#writeMessage" layoutX="529.0" layoutY="362.0" mnemonicParsing="false"
+                                        text="Send"/>
                             </children>
                         </AnchorPane>
                     </content>

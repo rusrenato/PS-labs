@@ -25,7 +25,10 @@
                 </TableView>
 
                 <Button layoutX="274.0" layoutY="231.0" mnemonicParsing="false" onAction="#washACar" text="Washed" />
-                <Text fx:id="errorText" layoutX="64.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="478.13671875" />
+                <Text fx:id="errorText" fill="#c61010" layoutX="61.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="478.13671875">
+               <font>
+                  <Font size="21.0" />
+               </font></Text>
                 <Label layoutX="33.0" layoutY="321.0" prefHeight="21.0" prefWidth="190.0" text="You have currently washed ">
                     <font>
                         <Font size="15.0" />

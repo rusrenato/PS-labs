@@ -7,6 +7,7 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -50,11 +51,11 @@
                                 <Text fx:id="workerError" layoutX="383.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="105.13671875" />
                                 <Text fx:id="hourError" layoutX="503.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="94.13671875" />
                                 <Button layoutX="664.0" layoutY="348.0" mnemonicParsing="false" onAction="#logout" text="Log out" />
-                        <Text fx:id="washDoneMessage" fill="#a11010" layoutX="9.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="388.13671875">
+                                <Text fx:id="washDoneMessage" fill="#a11010" layoutX="9.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="388.13671875">
                            <font>
                               <Font size="24.0" />
                            </font></Text>
-                        <Rating fx:id="rating" layoutX="415.0" layoutY="364.0" prefHeight="29.0" prefWidth="176.0" />
+                                <Rating fx:id="rating" layoutX="415.0" layoutY="364.0" prefHeight="29.0" prefWidth="176.0" />
                             </children>
                         </AnchorPane>
                     </content>
@@ -108,6 +109,24 @@
                         </AnchorPane>
                     </content>
                 </Tab>
+            <Tab text="Workers">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableViewReview" layoutX="32.0" layoutY="26.0" prefHeight="200.0" prefWidth="580.0">
+                          <columns>
+                            <TableColumn fx:id="idColumnReview" prefWidth="75.0" text="Id" />
+                            <TableColumn fx:id="messageColumn" prefWidth="382.0" text="Review" />
+                             <TableColumn fx:id="gradeColumn" minWidth="0.0" prefWidth="121.0" text="Grade" />
+                          </columns>
+                        </TableView>
+                        <TextArea fx:id="textArea" layoutX="201.0" layoutY="241.0" prefHeight="92.0" prefWidth="412.0" />
+                        <ComboBox fx:id="workersComboBoxForReview" layoutX="14.0" layoutY="241.0" prefHeight="31.0" prefWidth="164.0" promptText="Select a worker" />
+                        <Button onAction="#writeMessage" layoutX="529.0" layoutY="362.0" mnemonicParsing="false" text="Send" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
             </tabs>
         </TabPane>
     </children>

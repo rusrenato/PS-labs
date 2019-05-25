@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import ro.utcluj.enitity.User;
+import ro.utcluj.service.ReviewService;
 import ro.utcluj.service.UserService;
 
 @RunWith(SpringRunner.class)
@@ -18,15 +19,12 @@ public class AppTest {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private ReviewService reviewService;
 
     @Test
     public void rank() {
-        User user = userService.getUser(4);
-        System.out.println(user.getRank());
-       /* System.out.println(user.getNumberOfWashedCars());
-        userService.updateRank(user.getName(),2.00);
-        System.out.println(user.getRank());
-        System.out.println(user.getNumberOfWashedCars());*/
+        System.out.println(reviewService.findAllByWorkerName("Worker"));
     }
 
     @Test

@@ -1,23 +1,16 @@
 package ro.utcluj.service;
 
 
-
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import ro.utcluj.api.CarServiceInterface;
 import ro.utcluj.dto.CarDTO;
-import ro.utcluj.dto.UserDTO;
 import ro.utcluj.enitity.Car;
-import ro.utcluj.enitity.User;
 import ro.utcluj.mapper.CarMapper;
 import ro.utcluj.mapper.UserMapper;
 import ro.utcluj.repository.CarRepository;
-import ro.utcluj.repository.UserRepository;
 
 import java.util.ArrayList;
 import java.util.List;

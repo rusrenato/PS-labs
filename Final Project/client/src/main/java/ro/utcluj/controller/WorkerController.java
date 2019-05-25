@@ -118,6 +118,7 @@ public class WorkerController implements Initializable  {
             if (newValue != null) {
                 washId = newValue.getId();
             }
+            errorText.setText("");
         });
 
         ////
@@ -125,8 +126,10 @@ public class WorkerController implements Initializable  {
         stringProperty.addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                System.out.println("I got here");
+                System.out.println("I got here worker");
+                washService.findByWorker(LoginController.getUserId()).forEach(washDTO -> System.out.println(washDTO));
                 tableView.setItems(FXCollections.observableArrayList(washService.findByWorker(LoginController.getUserId())));
+                errorText.setText("You have a new rezervation ! ");
             }
         });
 
@@ -160,7 +163,7 @@ public class WorkerController implements Initializable  {
             breakList.add(curentValue);
             userService.updateNumberOfBreaks(LoginController.getUserId(),userService.getUserDTO(LoginController.getUserId()).getNumberOfBreaks() + 1);
         }
-
+        errorText.setText("");
 
     }
 

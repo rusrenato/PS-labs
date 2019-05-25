@@ -33,6 +33,10 @@ public class User {
     @OneToMany(mappedBy = "worker",cascade = CascadeType.ALL)
     private Set<Wash> washList;
 
+    @OneToMany(mappedBy = "workerReviewed", cascade = CascadeType.ALL)
+    private Set<Review> reviewList;
+
+
     public User() {
     }
 
