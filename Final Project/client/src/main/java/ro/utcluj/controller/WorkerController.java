@@ -62,6 +62,7 @@ public class WorkerController implements Initializable  {
     @FXML
     private TableColumn<WashDTO, String> carNumberColumn;
 
+
     @Autowired
     private WashServiceInterface washService;
     @Autowired

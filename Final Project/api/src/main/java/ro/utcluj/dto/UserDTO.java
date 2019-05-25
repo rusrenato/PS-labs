@@ -14,6 +14,15 @@ public class UserDTO implements Serializable {
     private Integer numberOfWashedCars;
     private CarDTO car;
     private Integer numberOfBreaks;
+    private Double rank;
+
+    public Double getRank() {
+        return rank;
+    }
+
+    public void setRank(Double rank) {
+        this.rank = rank;
+    }
 
     public Integer getId() {
         return id;
@@ -117,6 +126,7 @@ public class UserDTO implements Serializable {
                 ", numberOfWashedCars=" + numberOfWashedCars +
                 ", car=" + car +
                 ", numberOfBreaks=" + numberOfBreaks +
+                ", rank=" + rank +
                 '}';
     }
 }

@@ -1,5 +1,7 @@
 package ro.utcluj.enitity;
 
+import javafx.beans.binding.DoubleExpression;
+
 import javax.persistence.*;
 import java.util.List;
 import java.util.Set;
@@ -19,7 +21,7 @@ public class User {
     private int bonuses;
     private int numberOfWashedCars;
     private int numberOfBreaks;
-    private int rank;
+    private double rank;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "car", referencedColumnName = "id")
@@ -34,7 +36,7 @@ public class User {
     public User() {
     }
 
-    public User(String name, String username, String password, Role rol, int wallet, int salary, int bonuses, int numberOfWashedCars, int numberOfBreaks, Car car) {
+    public User(String name, String username, String password, Role rol, int wallet, int salary, int bonuses, int numberOfWashedCars, int numberOfBreaks, double rank, Car car) {
         this.name = name;
         this.username = username;
         this.password = password;
@@ -42,9 +44,18 @@ public class User {
         this.wallet = wallet;
         this.salary = salary;
         this.bonuses = bonuses;
+        this.rank = rank;
         this.numberOfWashedCars = numberOfWashedCars;
         this.numberOfBreaks = numberOfBreaks;
         this.car = car;
+    }
+
+    public double getRank() {
+        return rank;
+    }
+
+    public void setRank(double rank) {
+        this.rank = rank;
     }
 
     public int getId() {

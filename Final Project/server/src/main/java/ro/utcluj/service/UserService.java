@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.deser.Deserializers;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -66,14 +67,30 @@ public class UserService implements UserServiceInterface, Serializable {
     @Override
     public void insert(String username, String password, String rol, Integer salary) {
         System.out.println(username + " " + password);
-        User user = new User(username, username, password, Role.valueOf(rol), 0, salary, 0, 0, 0,null);
+        User user = new User(username, username, password, Role.valueOf(rol), 0, salary, 0, 0, 0, 0, null);
         userRepository.save(user);
     }
 
     public void insertRegister(String name, String username, String password) {
-        User user = new User(name, username, password, Role.valueOf("Client"), 0, 0, 0, 0, 0,null);
+        User user = new User(name, username, password, Role.valueOf("Client"), 0, 0, 0, 0, 0, 0, null);
         userRepository.save(user);
     }
+
+    public void updateRank(String name, Double rating) {
+        User user = userRepository.getUserByUsername(name);
+        if (user != null) {
+            if (user.getNumberOfWashedCars() == 0) {
+                user.setRank(rating);
+            } else if (user.getNumberOfWashedCars() == 1) {
+                user.setRank((user.getRank() + rating) / user.getNumberOfWashedCars());
+            } else {
+                user.setRank((user.getRank() * (user.getNumberOfWashedCars() - 1) + rating) / (double) user.getNumberOfWashedCars());
+
+            }
+            userRepository.save(user);
+        }
+    }
+
 
     public User getUser(Integer id) {
         return userRepository.getUserById(id);

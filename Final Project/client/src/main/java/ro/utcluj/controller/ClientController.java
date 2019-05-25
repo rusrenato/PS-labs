@@ -18,6 +18,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import org.controlsfx.control.Rating;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Component;
@@ -29,6 +30,7 @@ import ro.utcluj.dto.UserDTO;
 import ro.utcluj.dto.WashDTO;
 import ro.utcluj.notification.NotificationService;
 import ro.utcluj.notification.ServerSocketListener;
+import sun.rmi.runtime.Log;
 
 
 import java.io.IOException;
@@ -57,6 +59,8 @@ public class ClientController implements Initializable {
     private TableColumn<WashDTO, String> carNumberColumn;
     @FXML
     private TableColumn<WashDTO, String> workerColumn;
+    @FXML
+    private TableColumn<WashDTO, Double> workerRating;
     @FXML
     private ComboBox<String> carNumberComboBox;
     @FXML
@@ -101,14 +105,14 @@ public class ClientController implements Initializable {
     private Text moneyError;
     @FXML
     private Text washDoneMessage;
-
     @FXML
-    private Button button;
+    private Rating rating;
 
 
 
     private static String mesaj;
-    int j = 0;
+    private int j = 0;
+    private String washedCarWorkerName;
 
     @Autowired
     private WashServiceInterface washService;
@@ -120,6 +124,7 @@ public class ClientController implements Initializable {
     private WorkerController workerController;
     @Autowired
     NotificationService notificationService;
+
 
 
     private HashMap<String, Integer> washTypesMap = new HashMap<>();
@@ -137,6 +142,8 @@ public class ClientController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         stringProperty.set("Init");
+        rating.setVisible(false);
+
 
         try {
             notificationService.connectToNotificationServer();
@@ -152,6 +159,7 @@ public class ClientController implements Initializable {
         carNumberColumn.setCellValueFactory(cellData -> new SimpleObjectProperty<String>(cellData.getValue().getCar().getNrInmatriculare()));
         hourColumn.setCellValueFactory(new PropertyValueFactory<WashDTO, String>("hour"));
         workerColumn.setCellValueFactory(cellData -> new SimpleObjectProperty<String>(cellData.getValue().getWorker().getName()));
+        workerRating.setCellValueFactory(cellData -> new SimpleObjectProperty<Double>(cellData.getValue().getWorker().getRank()));
         tableView.setItems(FXCollections.observableArrayList(washService.findByCar(LoginController.getUserId())));
 
         //Table 2
@@ -186,6 +194,7 @@ public class ClientController implements Initializable {
                 carNumberComboBox.setValue(newValue.getCar().getNrInmatriculare());
                 typeComboBox.setValue(newValue.getType());
                 hourComboBox.setValue(newValue.getHour());
+                rating.setVisible(false);
             }
         });
 
@@ -194,16 +203,36 @@ public class ClientController implements Initializable {
         stringProperty.addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                System.out.println(newValue.substring(6));
-                washDoneMessage.setText("Wash done for hour " + newValue.substring(0,5));
+                String workerName = newValue.substring(6);
+                String hour = newValue.substring(0, 5);
+                System.out.println(workerName);
+                washDoneMessage.setText("Wash done for hour " + hour);
+                workerHourMap.get(workerName).add(hour);
+                washedCarWorkerName = workerName;
+                rating.setRating(0);
                 tableView.setItems(FXCollections.observableArrayList(washService.findByCar(LoginController.getUserId())));
-                workerHourMap.get(newValue.substring(6)).add(newValue.substring(0,5));
-
+                rating.setVisible(true);
 
             }
         });
 
         ////
+
+        rating.ratingProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observable,
+                                Number oldValue, Number newValue) {
+                if (newValue.intValue() != 0) {
+                    System.out.println("As new value " + newValue);
+                    System.out.println(rating.getRating());
+                    userService.updateRank(washedCarWorkerName, rating.getRating());
+                    System.out.println(userService.getUserDTO(userService.getIdByUsername(washedCarWorkerName)).getRank());
+                    tableView.setItems(FXCollections.observableArrayList(washService.findByCar(LoginController.getUserId())));
+                    updateObservable();
+                }
+
+            }
+        });
 
 
         tableViewCar.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
@@ -229,7 +258,6 @@ public class ClientController implements Initializable {
         }
 
         for (WashDTO wash : washService.findByCar((LoginController.getUserId()))) {
-            System.out.println();
             workerHourMap.get(wash.getWorker().getUsername()).remove(wash.getHour());
         }
 
@@ -239,7 +267,11 @@ public class ClientController implements Initializable {
 
         for (String worker : workerHourMap.keySet()) {
             if (!workerObservableList.contains(worker))
-                workerObservableList.add(worker);
+                workerObservableList.add(worker + " - " + userService.getUserDTO(userService.getIdByUsername(worker)).getRank());
+        }
+
+        for (String worker : workerObservableList) {
+            System.out.println(worker);
         }
 
         workerComboBox.setItems(workerObservableList);
@@ -247,7 +279,7 @@ public class ClientController implements Initializable {
 
         workerComboBox.getSelectionModel().selectedItemProperty().addListener((options, oldValue, newValue) -> {
                     if(newValue != null)
-                    hourComboBox.setItems(workerHourMap.get(newValue).sorted());
+                        hourComboBox.setItems(workerHourMap.get(newValue.split(" - ")[0]).sorted());
 
                 }
         );
@@ -263,13 +295,29 @@ public class ClientController implements Initializable {
         colorInput.setText("");
     }
 
+    private void updateObservable() {
+        workerObservableList.clear();
+        for (String worker : workerHourMap.keySet()) {
+            if (!workerObservableList.contains(worker))
+                workerObservableList.add(worker + " - " + userService.getUserDTO(userService.getIdByUsername(worker)).getRank());
+        }
+        workerComboBox.setItems(workerObservableList);
+    }
+
     public void insertWash() {
 
         if (userService.getUserDTO(LoginController.getUserId()).getWallet() > washTypesMap.get(typeComboBox.getValue())) {
-            washService.insert(carNumberComboBox.getValue(), typeComboBox.getValue(), hourComboBox.getValue(), washTypesMap.get(typeComboBox.getValue()), workerComboBox.getValue());
+            if (userService.getUserDTO(LoginController.getUserId()).getNumberOfWashedCars() % 10 == 9) {
+                washService.insert(carNumberComboBox.getValue(), typeComboBox.getValue(), hourComboBox.getValue(), 0, workerComboBox.getValue().split(" - ")[0]);
+                userService.updateNumberOfWashedCars(LoginController.getUserId(), 1 + userService.getUserDTO(LoginController.getUserId()).getNumberOfWashedCars());
+                washDoneMessage.setText("Congrats for your " + userService.getUserDTO(LoginController.getUserId()).getNumberOfWashedCars() + " wash, it was free");
+            } else {
+                washService.insert(carNumberComboBox.getValue(), typeComboBox.getValue(), hourComboBox.getValue(), washTypesMap.get(typeComboBox.getValue()), workerComboBox.getValue().split(" - ")[0]);
+                userService.updateNumberOfWashedCars(LoginController.getUserId(), 1 + userService.getUserDTO(LoginController.getUserId()).getNumberOfWashedCars());
+            }
             tableView.setItems(FXCollections.observableArrayList(washService.findByCar(LoginController.getUserId())));
             userService.updateMoney(LoginController.getUserId(), -washTypesMap.get(typeComboBox.getValue()));
-            workerHourMap.get(workerComboBox.getValue()).remove(hourComboBox.getValue());
+            workerHourMap.get(workerComboBox.getValue().split("[ - ]")[0]).remove(hourComboBox.getValue());
         } else {
             typeError.setText("Not enough money");
             typeError.setFill(Color.RED);

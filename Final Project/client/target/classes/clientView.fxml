@@ -11,32 +11,34 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.utcluj.controller.ClientController">
     <children>
-        <TabPane prefHeight="406.0" prefWidth="601.0" tabClosingPolicy="UNAVAILABLE">
+        <TabPane prefHeight="550.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
             <tabs>
                 <Tab text="Wash reservation">
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="345.0" prefWidth="522.0">
                             <children>
-                                <TableView fx:id="tableView" layoutX="14.0" layoutY="27.0" prefHeight="199.0" prefWidth="571.0">
+                                <TableView fx:id="tableView" layoutX="14.0" layoutY="27.0" prefHeight="199.0" prefWidth="722.0">
                                     <columns>
                                         <TableColumn fx:id="idColumn" prefWidth="81.0" text="id" />
-                                        <TableColumn fx:id="carNumberColumn" prefWidth="88.0" text="car" />
-                                        <TableColumn fx:id="hourColumn" prefWidth="72.0" text="hour" />
-                                        <TableColumn fx:id="typeColumn" prefWidth="132.0" text="type" />
-                                        <TableColumn fx:id="priceColumn" prefWidth="71.0" text="price" />
-                                        <TableColumn fx:id="workerColumn" prefWidth="126.0" text="worker" />
+                                        <TableColumn fx:id="carNumberColumn" prefWidth="142.0" text="car" />
+                                        <TableColumn fx:id="hourColumn" prefWidth="95.0" text="hour" />
+                                        <TableColumn fx:id="typeColumn" prefWidth="120.0" text="type" />
+                                        <TableColumn fx:id="priceColumn" prefWidth="85.0" text="price" />
+                                        <TableColumn fx:id="workerColumn" prefWidth="109.0" text="worker" />
+                                        <TableColumn fx:id="workerRating" prefWidth="89.0" text="rating" />
                                     </columns>
                                 </TableView>
-                                <ComboBox fx:id="typeComboBox" layoutX="251.0" layoutY="250.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Wash Type" />
-                                <ComboBox fx:id="hourComboBox" layoutX="511.0" layoutY="250.0" prefHeight="25.0" prefWidth="80.0" promptText="Hour" />
-                                <ComboBox fx:id="carNumberComboBox" layoutX="142.0" layoutY="250.0" prefHeight="25.0" prefWidth="105.0" promptText="Car number" />
-                                <ComboBox fx:id="workerComboBox" layoutX="384.0" layoutY="249.0" prefHeight="25.0" prefWidth="115.0" promptText="Select Worker" />
+                                <ComboBox fx:id="typeComboBox" layoutX="284.0" layoutY="250.0" prefHeight="31.0" prefWidth="179.0" promptText="Select Wash Type" />
+                                <ComboBox fx:id="hourComboBox" layoutX="647.0" layoutY="250.0" prefHeight="31.0" prefWidth="89.0" promptText="Hour" />
+                                <ComboBox fx:id="carNumberComboBox" layoutX="142.0" layoutY="250.0" prefHeight="31.0" prefWidth="132.0" promptText="Car number" />
+                                <ComboBox fx:id="workerComboBox" layoutX="472.0" layoutY="250.0" prefHeight="31.0" prefWidth="157.0" promptText="Select Worker" />
 
-                                <Button layoutX="522.0" layoutY="304.0" mnemonicParsing="false" onAction="#insertWash" text="Reserve" />
-                                <Button layoutX="463.0" layoutY="304.0" mnemonicParsing="false" onAction="#deleteWash" text="Delete" />
+                                <Button layoutX="664.0" layoutY="301.0" mnemonicParsing="false" onAction="#insertWash" text="Reserve" />
+                                <Button layoutX="566.0" layoutY="301.0" mnemonicParsing="false" onAction="#deleteWash" text="Delete" />
 
                                 <Text layoutX="5.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make a reservation" wrappingWidth="136.13671875">
                                     <font>
@@ -47,11 +49,12 @@
                                 <Text fx:id="typeError" layoutX="257.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="152.13671875" />
                                 <Text fx:id="workerError" layoutX="383.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="105.13671875" />
                                 <Text fx:id="hourError" layoutX="503.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="94.13671875" />
-                                <Button layoutX="522.0" layoutY="338.0" mnemonicParsing="false" onAction="#logout" text="Log out" />
-                        <Text fx:id="washDoneMessage" fill="#a11010" layoutX="14.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="388.13671875">
+                                <Button layoutX="664.0" layoutY="348.0" mnemonicParsing="false" onAction="#logout" text="Log out" />
+                        <Text fx:id="washDoneMessage" fill="#a11010" layoutX="9.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="388.13671875">
                            <font>
                               <Font size="24.0" />
                            </font></Text>
+                        <Rating fx:id="rating" layoutX="415.0" layoutY="364.0" prefHeight="29.0" prefWidth="176.0" />
                             </children>
                         </AnchorPane>
                     </content>

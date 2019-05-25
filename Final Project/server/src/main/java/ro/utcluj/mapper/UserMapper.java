@@ -19,6 +19,7 @@ public class UserMapper {
         dto.setName(user.getName());
         dto.setUsername(user.getUsername());
         dto.setNumberOfWashedCars(user.getNumberOfWashedCars());
+        dto.setRank(user.getRank());
         dto.setPassword(user.getPassword());
         dto.setRol(Role.valueOf(user.getRol().name()));
         dto.setBonuses(user.getBonuses());

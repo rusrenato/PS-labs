@@ -36,4 +36,6 @@ public interface UserServiceInterface {
 
     void updateNumberOfBreaks(Integer id, Integer numberOfBreaks);
 
+    void updateRank(String name, Double rating);
+
 }
